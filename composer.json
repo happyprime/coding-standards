@@ -8,12 +8,11 @@
 		"dealerdirect/phpcodesniffer-composer-installer": true
 	  }
 	},
-	"minimum-stability": "dev",
 	"require": {
 	  "dealerdirect/phpcodesniffer-composer-installer": "*",
 	  "php": ">=7.4",
-	  "phpcompatibility/php-compatibility": "dev-develop as 9.99.99",
 	  "phpcompatibility/phpcompatibility-wp": "*",
+	  "phpcompatibility/php-compatibility": "*",
 	  "sirbrillig/phpcs-variable-analysis": "*",
 	  "wp-coding-standards/wpcs": "*"
 	},
