@@ -1,0 +1,24 @@
+{
+	"name": "happy-prime/coding-standards",
+	"description": "Happy Prime coding standards",
+	"type": "phpcodesniffer-standard",
+	"license": "GPL-2.0-or-later",
+	"config": {
+	  "allow-plugins": {
+		"dealerdirect/phpcodesniffer-composer-installer": true
+	  }
+	},
+	"minimum-stability": "stable",
+	"prefer-stable": true,
+	"require": {
+	  "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+	  "php": ">=^7.4",
+	  "phpcompatibility/php-compatibility": "dev-develop as 9.99.99",
+	  "phpcompatibility/phpcompatibility-wp": "*",
+	  "sirbrillig/phpcs-variable-analysis": "*",
+	  "wp-coding-standards/wpcs": "*"
+	},
+	"suggest": {
+	  "dealerdirect/phpcodesniffer-composer-installer": "Automatically adds this package's ruleset to the installed_paths option of PHP_CodeSniffer"
+	}
+  }
