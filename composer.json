@@ -1,5 +1,5 @@
 {
-	"name": "happy-prime/coding-standards",
+	"name": "happyprime/coding-standards",
 	"description": "Happy Prime coding standards",
 	"type": "phpcodesniffer-standard",
 	"license": "GPL-2.0-or-later",
