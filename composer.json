@@ -8,10 +8,8 @@
 		"dealerdirect/phpcodesniffer-composer-installer": true
 	  }
 	},
-	"minimum-stability": "stable",
-	"prefer-stable": true,
 	"require": {
-	  "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+	  "dealerdirect/phpcodesniffer-composer-installer": "*",
 	  "php": ">=7.4",
 	  "phpcompatibility/php-compatibility": "dev-develop as 9.99.99",
 	  "phpcompatibility/phpcompatibility-wp": "*",
