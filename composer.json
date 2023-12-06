@@ -12,7 +12,7 @@
 	"prefer-stable": true,
 	"require": {
 	  "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-	  "php": ">=^7.4",
+	  "php": ">=7.4",
 	  "phpcompatibility/php-compatibility": "dev-develop as 9.99.99",
 	  "phpcompatibility/phpcompatibility-wp": "*",
 	  "sirbrillig/phpcs-variable-analysis": "*",
