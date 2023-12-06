@@ -1,0 +1,11 @@
+parameters:
+  level: 1
+  paths:
+    - %rootDir%/../../../
+  scanFiles:
+      - %rootDir%/../../php-stubs/wordpress-stubs/wordpress-stubs.php
+      - %rootDir%/../../php-stubs/wordpress-tests-stubs/wordpress-tests-stubs.php
+  excludePaths:
+    - %rootDir%/../../../vendor
+    - %rootDir%/../../../node_modules
+  ignoreErrors:
