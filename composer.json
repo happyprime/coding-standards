@@ -20,9 +20,10 @@
 	  "szepeviktor/phpstan-wordpress": "^1.3",
 	  "phpstan/extension-installer": "^1.3",
 	  "phpstan/phpstan-phpunit": "^1.3",
-	  "php-stubs/wordpress-tests-stubs": "^6.2"
+	  "php-stubs/wordpress-tests-stubs": "^6.2",
+	  "php-stubs/wp-cli-stubs": "^2.9"
 	},
 	"suggest": {
 	  "dealerdirect/phpcodesniffer-composer-installer": "Automatically adds this package's ruleset to the installed_paths option of PHP_CodeSniffer"
 	}
-  }
+}
