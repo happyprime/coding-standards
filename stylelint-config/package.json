@@ -1,6 +1,6 @@
 {
   "name": "@happyprime/stylelint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "exports": {
@@ -17,6 +17,7 @@
     "stylelint-config-recommended": "^14.0.1"
   },
   "peerDependencies": {
-    "stylelint": "^16.7.0"
+    "stylelint": "^16.7.0",
+    "stylelint-config-recommended": "^14.0.1"
   }
 }
