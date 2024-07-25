@@ -1,8 +1,12 @@
 {
   "name": "@happyprime/eslint-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
+  "exports": {
+	".": "./index.js",
+	"./prettier-config": "./prettier-config.js"
+  },
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack --mode development --watch",
