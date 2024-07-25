@@ -21,6 +21,5 @@ module.exports = {
 		react: {
 			version: '18',
 		},
-	},
-	prettierConfig: require('./.prettierrc.js'),
+	}
 };
