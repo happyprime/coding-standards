@@ -22,4 +22,5 @@ module.exports = {
 			version: '18',
 		},
 	},
+	prettierConfig: require('./.prettierrc.js'),
 };
