@@ -1,0 +1,33 @@
+{
+  "name": "@happyprime/eslint-config",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack --mode development --watch",
+    "lint": "eslint .",
+    "fix": "eslint . --fix",
+    "lint:package": "node ./node_modules/npm-package-json-lint/dist/cli.js ./"
+  },
+  "keywords": [],
+  "author": "happyprime",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsdoc": "^48.8.3",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2"
+  },
+  "peerDependencies": {
+    "eslint": "^8"
+  }
+}
