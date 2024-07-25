@@ -5,7 +5,7 @@
   "main": "index.js",
   "exports": {
 	".": "./index.js",
-	"./prettier-config": "./prettier-config.js"
+	"./prettier": "./.prettierrc.js"
   },
   "scripts": {
     "build": "webpack --mode production",
