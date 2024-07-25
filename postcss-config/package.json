@@ -1,11 +1,10 @@
 {
   "name": "@happyprime/postcss-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "exports": {
-	".": "./index.js",
-	"./postcss": "./postcss.config.js"
+	".": "./index.js"
   },
   "keywords": [],
   "author": "happyprime",
