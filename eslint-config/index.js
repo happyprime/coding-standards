@@ -11,6 +11,10 @@ module.exports = {
 		browser: true,
 	},
 	ignorePatterns: ['build/**/*.js', 'vendor/**/*.js'],
+	parser: '@babel/eslint-parser',
+	parserOptions: {
+		ecmaVersion: "latest",
+	},
 	rules: {
 		'no-console': ['warn', { allow: ['error'] }],
 		'import/no-unresolved': [2, { ignore: ['^@wordpress/'] }],

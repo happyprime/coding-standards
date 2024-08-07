@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "exports": {
-	".": "./index.js",
-	"./prettier": "./.prettierrc.js"
+    ".": "./index.js",
+    "./prettier": "./.prettierrc.js"
   },
   "scripts": {
     "build": "webpack --mode production",
@@ -22,6 +22,7 @@
     "npm": ">=10"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.25.1",
     "eslint": "^8",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
@@ -32,6 +33,7 @@
     "eslint-plugin-react-hooks": "^4.6.2"
   },
   "peerDependencies": {
+    "@babel/eslint-parser": "^7.25.1",
     "eslint": "^8",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
