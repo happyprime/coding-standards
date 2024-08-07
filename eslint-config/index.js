@@ -15,7 +15,7 @@ module.exports = {
 		ecmaVersion: "latest",
 	},
 	env: {
-		"es2025": true,
+		"es2024": true,
 	},
 	rules: {
 		'no-console': ['warn', { allow: ['error'] }],
