@@ -11,9 +11,11 @@ module.exports = {
 		browser: true,
 	},
 	ignorePatterns: ['build/**/*.js', 'vendor/**/*.js'],
-	parser: '@babel/eslint-parser',
 	parserOptions: {
 		ecmaVersion: "latest",
+	},
+	env: {
+		"es2025": true,
 	},
 	rules: {
 		'no-console': ['warn', { allow: ['error'] }],
