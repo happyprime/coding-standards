@@ -22,16 +22,7 @@ module.exports = {
 		'import/no-unresolved': [2, { ignore: ['^@wordpress/'] }],
 		'react/react-in-jsx-scope': 'off',
 		'react/prop-types': 'off',
-		'jsdoc/no-undefined-types': [
-			'error',
-			{
-				definedTypes: [
-					'HTMLElement',
-					'JSX',
-					'WPElement'
-				],
-			},
-		],
+		'jsdoc/no-undefined-types': 'off',
 		'jsdoc/tag-lines': [
 			'error',
 			'any',
