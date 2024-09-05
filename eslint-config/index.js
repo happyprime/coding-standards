@@ -32,6 +32,13 @@ module.exports = {
 				],
 			},
 		],
+		'jsdoc/tag-lines': [
+			'error',
+			'any',
+			{
+				startLines: 1,
+			},
+		],
 	},
 	settings: {
 		react: {
