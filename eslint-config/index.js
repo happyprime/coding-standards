@@ -10,7 +10,7 @@ module.exports = {
 	env: {
 		browser: true,
 	},
-	ignorePatterns: ['build/**/*.js', 'vendor/**/*.js'],
+	ignorePatterns: ['build/**/*.js', 'build/*.js', 'vendor/**/*.js'],
 	parserOptions: {
 		ecmaVersion: "latest",
 	},
