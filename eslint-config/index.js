@@ -1,4 +1,5 @@
 module.exports = {
+	root: true,
 	extends: [
 		'plugin:import/recommended',
 		'plugin:jsdoc/recommended',
