@@ -8,15 +8,20 @@ module.exports = {
 		'plugin:react/recommended',
 		'plugin:react-hooks/recommended',
 	],
+	overrides: [
+		{
+			files: ['**/*.{js,cjs,mjs}'],
+		},
+	],
 	env: {
 		browser: true,
 	},
 	ignorePatterns: [
-		'build/*.js',
-		'build/**/*.js',
-		'**/build/*.js',
-		'**/build/**/*.js',
-		'vendor/**/*.js',
+		'build/*.*',
+		'build/**/*.*',
+		'**/build/*.*',
+		'**/build/**/*.*',
+		'vendor/**/*.*',
 	],
 	parserOptions: {
 		ecmaVersion: "latest",
