@@ -35,4 +35,14 @@
 	<rule ref="Universal.Arrays.DisallowShortArraySyntax">
 		<exclude name="Universal.Arrays.DisallowShortArraySyntax.Found"/>
 	</rule>
+
+	<rule ref="WordPress.Files.FileName">
+		<!-- Some projects have an `_` in the post type slug and classic theme template files
+		     require that the slug match. This is non-consequential. -->
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+
+		<!-- WordPress has somewhat silly rules about class file names. We choose file
+		     names that make sense for the project at the time. -->
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+	</rule>
 </ruleset>
