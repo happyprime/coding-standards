@@ -8,9 +8,6 @@
 	<!-- Show progress and sniff codes in all reports -->
 	<arg value="ps"/>
 
-	<!-- Strip the file paths down to the relevant bit -->
-	<arg name="basepath" value="./"/>
-
 	<!-- Add colors to the output -->
 	<arg name="colors"/>
 
