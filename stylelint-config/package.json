@@ -13,11 +13,7 @@
     "node": ">=20",
     "npm": ">=10"
   },
-  "devDependencies": {
-    "stylelint-config-recommended": "^14.0.1"
-  },
   "peerDependencies": {
-    "stylelint": "^16.7.0",
-    "stylelint-config-recommended": "^14.0.1"
+    "stylelint": "^16.19.1"
   }
 }
