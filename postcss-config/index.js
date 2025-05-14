@@ -3,11 +3,6 @@ module.exports = {
 		'postcss-import': {
 			plugins: [ require( 'stylelint' ) ],
 		},
-		'postcss-preset-env': {
-			stage: 2,
-			features: {
-				'nesting-rules': true
-			}
-		},
+		'postcss-preset-env': {},
 	},
 };
