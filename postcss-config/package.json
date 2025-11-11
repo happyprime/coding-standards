@@ -1,6 +1,6 @@
 {
   "name": "@happyprime/postcss-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "exports": {
@@ -15,12 +15,12 @@
   },
   "devDependencies": {
     "postcss-cli": "^11.0.1",
-    "postcss-import": "^16.1.0",
-    "postcss-preset-env": "^10.1.6"
+    "postcss-import": "^16.1.1",
+    "postcss-preset-env": "^10.4.0"
   },
   "peerDependencies": {
-    "postcss-cli": "^11.0.0",
-    "postcss-import": "^16.1.0",
-    "postcss-preset-env": "^10.1.6"
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1",
+    "postcss-preset-env": "^10.4.0"
   }
 }
