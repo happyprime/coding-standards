@@ -66,6 +66,7 @@ export default [
 		},
 		rules: {
 			'no-console': ['warn', { allow: ['error'] }],
+			'no-lonely-if': 'error',
 			'jsdoc/no-undefined-types': 'off',
 			'jsdoc/tag-lines': [
 				'error',
@@ -90,6 +91,7 @@ export default [
 		},
 		rules: {
 			'no-console': ['warn', { allow: ['error'] }],
+			'no-lonely-if': 'error',
 			'jsdoc/no-undefined-types': 'off',
 			'jsdoc/tag-lines': [
 				'error',
