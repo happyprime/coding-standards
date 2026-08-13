@@ -9,6 +9,6 @@ parameters:
       - %rootDir%/../../php-stubs/wp-cli-stubs/wp-cli-commands-stubs.php
       - %rootDir%/../../php-stubs/wp-cli-stubs/wp-cli-i18n-stubs.php
   excludePaths:
-    - %rootDir%/../../../vendor
-    - %rootDir%/../../../node_modules
+    - %rootDir%/../../../vendor/*
+    - %rootDir%/../../../node_modules/*
   ignoreErrors:
