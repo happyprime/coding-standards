@@ -10,13 +10,6 @@ First tagged release. Prior consumers tracked `dev-trunk`.
 
 ### Changed
 
-- Raise the PHP floor to `>=8.0`, up from `>=7.4`, and move the ruleset's
-  `testVersion` from `7.4-` to `8.0-` to match. Nothing in the dependency tree forced
-  this; the stack resolves identically on 7.4. The visible effect is that
-  PHPCompatibility no longer reports PHP 8.0 syntax — `match`, named arguments,
-  constructor property promotion, the nullsafe operator, union types — as errors.
-  A project still deploying to PHP 7.4 must set `testVersion` back to `7.4-` in its own
-  ruleset or it loses that check silently.
 - Move the PHPCompatibility stack onto its 10.0 alpha line:
   `phpcompatibility/php-compatibility` `^10.0@dev`,
   `phpcompatibility/phpcompatibility-wp` `^3.0@dev`, and a now-explicit
@@ -51,8 +44,9 @@ First tagged release. Prior consumers tracked `dev-trunk`.
 - Requires `"minimum-stability": "dev"` and `"prefer-stable": true` in your root
   `composer.json`. A transitive `@dev` constraint is not a stability flag. See the
   README.
-- Requires PHP 8.0. `phpunit/phpunit` stays at `^9.6`: phpunit 10.5 needs PHP 8.1, so
-  an 8.0 floor does not unlock it.
+- `php` stays at `>=7.4` and `testVersion` stays at `7.4-`. Nothing in the alpha line
+  forces a bump — PHPCompatibility 10 requires PHP `>=5.4` and PHPStan 2 requires
+  `^7.4 || ^8.0`.
 - PHPCompatibility 10 adds ~65 sniffs for PHP 8.1-8.5 and renames or removes six.
   Project rulesets that `<exclude>` individual PHPCompatibility sniffs need updating;
   an `<exclude>` for a sniff that no longer exists is ignored, so the rule silently
