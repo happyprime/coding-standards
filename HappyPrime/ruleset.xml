@@ -12,7 +12,7 @@
 	<arg name="colors"/>
 
 	<!-- Rules: Check PHP version compatibility -->
-	<config name="testVersion" value="7.4-"/>
+	<config name="testVersion" value="8.0-"/>
 
 	<!-- Ignore 3rd party libraries loaded by NPM -->
 	<exclude-pattern>*/node_modules/*</exclude-pattern>

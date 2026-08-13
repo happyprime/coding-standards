@@ -14,6 +14,8 @@ Happy Prime projects.
 
 ## Install
 
+Requires PHP 8.0 or later.
+
 ```sh
 composer require --dev happyprime/coding-standards:^1.0@alpha
 ```
@@ -90,14 +92,31 @@ includes:
     - vendor/happyprime/coding-standards/phpstan.neon.dist
 ```
 
-`testVersion` defaults to `7.4-`. Override it in your own ruleset if the project has a
-higher floor:
+`testVersion` defaults to `8.0-`, so PHP 8.0 syntax — `match`, named arguments,
+constructor property promotion, the nullsafe operator, union types — passes clean.
+Override it in your own ruleset if the project has a different floor:
 
 ```xml
+<!-- Project targets 8.1+ and wants readonly, enums, never. -->
 <config name="testVersion" value="8.1-"/>
+
+<!-- Project still deploys to 7.4. Set this or you lose the safety net. -->
+<config name="testVersion" value="7.4-"/>
 ```
 
 ## Upgrading to 1.0.0-alpha1
+
+### PHP 8.0 floor
+
+`"php": ">=8.0"`, up from `>=7.4`. Composer will refuse to install this package on
+PHP 7.4. Nothing in the dependency tree forced this — the whole stack still resolves
+identically on 7.4 — it is a policy floor.
+
+`testVersion` moves from `7.4-` to `8.0-` to match. This is the change you will
+actually notice: PHPCompatibility stops reporting PHP 8.0 features as errors, so code
+that previously failed the lint now passes. A project that still deploys to PHP 7.4
+must set `<config name="testVersion" value="7.4-"/>` in its own ruleset, or it loses
+that check silently.
 
 ### PHPCompatibility 10 renamed sniffs
 
