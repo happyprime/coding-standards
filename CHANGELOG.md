@@ -4,6 +4,13 @@ All notable changes to this project are documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.0.0-alpha2] - 2026-08-19
+
+### Changed
+
+- Updated `php-stubs/wordpress-stubs` and `php-stubs/wordpress-tests-stubs` to `7.0 as 6.9.4`. The stubs are now at 7.0 and can, but latest tagged version of those repositories is still 6.9.4.
+- Updated `sirbrillig/phpcs-variable-analysis` to `^3`.
+
 ## [1.0.0-alpha1] - 2026-08-13
 
 First tagged release. Prior consumers tracked `dev-trunk`.
