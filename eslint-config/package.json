@@ -1,7 +1,7 @@
 {
   "name": "@happyprime/eslint-config",
   "version": "1.0.0",
-  "description": "",
+  "description": "Shared ESLint flat config for Happy Prime projects.",
   "type": "module",
   "main": "index.js",
   "exports": {
@@ -9,39 +9,36 @@
     "./prettier": "./.prettierrc.cjs"
   },
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack --mode development --watch",
     "lint": "eslint .",
-    "fix": "eslint . --fix",
-    "lint:package": "node ./node_modules/npm-package-json-lint/dist/cli.js ./"
+    "fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "happyprime",
   "license": "MIT",
   "engines": {
-    "node": ">=20",
+    "node": "^22.22.2 || >=24.15.0",
     "npm": ">=10"
   },
   "devDependencies": {
-    "eslint": "^9",
+    "eslint": "^9.39.5",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jsdoc": "^61.1.12",
+    "eslint-plugin-jsdoc": "^65.0.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-prettier": "^5.5.6",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "globals": "^16.5.0"
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.12.0"
   },
   "peerDependencies": {
     "eslint": "^9",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsdoc": "^50.6.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsdoc": "^65.0.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.2.3",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "globals": "^15.14.0"
+    "eslint-plugin-prettier": "^5.5.6",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.12.0"
   }
 }

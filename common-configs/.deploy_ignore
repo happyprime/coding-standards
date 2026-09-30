@@ -7,7 +7,7 @@
 /vendor/
 .deploy_ignore
 .deploy_include
-.eslintrc.js
+eslint.config.mjs
 .gitignore
 .postcssrc.js
 .prettierrc.js

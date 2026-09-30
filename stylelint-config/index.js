@@ -2,7 +2,7 @@
  * This file is forked from the stylelint-config-recommended package due to
  * dependency conflicts caused by various @wordpress/* packages.
  *
- * It was last updated to stylelint-config-recommended 16.0.0. Custom rule
+ * It was last updated to stylelint-config-recommended 18.0.0. Custom rule
  * changes have inline documentation.
  */
 'use strict';
@@ -36,7 +36,9 @@ module.exports = {
 		'media-feature-name-no-unknown': true,
 		'media-feature-name-value-no-unknown': true,
 		'media-query-no-invalid': true,
+		'media-type-no-deprecated': true,
 		'named-grid-areas-no-invalid': true,
+		'nesting-selector-no-missing-scoping-root': true,
 
 		/**
 		 * Stylelint seems to have trouble properly tracking specificity
@@ -50,7 +52,15 @@ module.exports = {
 		'no-empty-source': true,
 		'no-invalid-double-slash-comments': true,
 		'no-invalid-position-at-import-rule': true,
+		'no-invalid-position-declaration': true,
 		'no-irregular-whitespace': true,
+
+		/**
+		 * WordPress's `.screen-reader-text` pattern still pairs `clip` with
+		 * `clip-path`, and the autofix to `clip-path` is not equivalent.
+		 */
+		'property-no-deprecated': [true, { ignoreProperties: ['clip'] }],
+
 		'property-no-unknown': true,
 		'selector-anb-no-unmatchable': true,
 

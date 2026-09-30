@@ -4,6 +4,48 @@ All notable changes to this project are documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Changed
+
+- `php-stubs/wordpress-stubs` and `php-stubs/wordpress-tests-stubs` now require `^7.0`.
+  Both have tagged 7.x releases, so the `7.0 as 6.9.4` inline alias is gone. Inline
+  aliases only apply in a root `composer.json`, so the alias never reached consumers
+  anyway, and the exact `7.0` pin kept them off 7.1.
+- Require `szepeviktor/phpstan-wordpress` `^2.0.4`, the first release whose
+  `php-stubs/wordpress-stubs` constraint (`>=6.6.2`) allows 7.x.
+- Removed the `suggest` entry for `dealerdirect/phpcodesniffer-composer-installer`,
+  which is already required.
+
+### npm packages
+
+All three packages now require Node 22 or later (Node 20 reached end-of-life in
+April 2026).
+
+- `@happyprime/eslint-config`: `eslint-plugin-jsdoc` `^65`, `eslint-plugin-react-hooks`
+  `^7.1`, `globals` `^17`. The `peerDependencies` had drifted behind the tested
+  `devDependencies` (e.g. `eslint-plugin-react-hooks` `^5` vs `^7`) and now match them.
+  `engines.node` is `^22.22.2 || >=24.15.0`, the range `eslint-plugin-jsdoc` 64+
+  requires. Removed the `build`, `start` and `lint:package` scripts, which called tools
+  that were never installed. ESLint stays on 9: `eslint-plugin-import`,
+  `eslint-plugin-jsx-a11y` and `eslint-plugin-react` do not yet support ESLint 10.
+- `@happyprime/stylelint-config`: requires `stylelint` `^17`. Synced with
+  `stylelint-config-recommended` 18.0.0, which adds `media-type-no-deprecated`,
+  `nesting-selector-no-missing-scoping-root`, `no-invalid-position-declaration` and
+  `property-no-deprecated` (with `clip` ignored for WordPress's `.screen-reader-text`).
+- `@happyprime/postcss-config`: `postcss-cli` `^12`, `postcss-import` `^17`,
+  `postcss-preset-env` `^11`. `stylelint` is now a declared peer dependency, since
+  `index.js` loads it.
+- `common-configs/`: replaced `.eslintrc.js`, which ESLint 9 no longer reads, with a
+  flat `eslint.config.mjs`.
+
+## [1.0.0-alpha3] - 2026-08-19
+
+### Changed
+
+- `php-stubs/wp-cli-stubs` now requires `dev-master`. Its latest tag (2.12.0) caps
+  `php-stubs/wordpress-stubs` at `^6.0`, which conflicts with the 7.0 stubs.
+
 ## [1.0.0-alpha2] - 2026-08-19
 
 ### Changed
@@ -59,4 +101,7 @@ First tagged release. Prior consumers tracked `dev-trunk`.
   an `<exclude>` for a sniff that no longer exists is ignored, so the rule silently
   comes back on.
 
+[Unreleased]: https://github.com/happyprime/coding-standards/compare/1.0.0-alpha3...HEAD
+[1.0.0-alpha3]: https://github.com/happyprime/coding-standards/releases/tag/1.0.0-alpha3
+[1.0.0-alpha2]: https://github.com/happyprime/coding-standards/releases/tag/1.0.0-alpha2
 [1.0.0-alpha1]: https://github.com/happyprime/coding-standards/releases/tag/1.0.0-alpha1

@@ -6,6 +6,20 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import prettierRecommended from 'eslint-plugin-prettier/recommended';
 import globals from 'globals';
 
+// Rules applied to both ES module and CommonJS files.
+const sharedRules = {
+	'no-console': ['warn', { allow: ['error'] }],
+	'no-lonely-if': 'error',
+	'jsdoc/no-undefined-types': 'off',
+	'jsdoc/tag-lines': [
+		'error',
+		'any',
+		{
+			startLines: 1,
+		},
+	],
+};
+
 export default [
 	jsdocPlugin.configs['flat/recommended'],
 	{
@@ -64,18 +78,7 @@ export default [
 				...globals.es2024,
 			},
 		},
-		rules: {
-			'no-console': ['warn', { allow: ['error'] }],
-			'no-lonely-if': 'error',
-			'jsdoc/no-undefined-types': 'off',
-			'jsdoc/tag-lines': [
-				'error',
-				'any',
-				{
-					startLines: 1,
-				},
-			],
-		},
+		rules: sharedRules,
 	},
 
 	// Configuration for CJS files.
@@ -89,18 +92,7 @@ export default [
 				...globals.es2024,
 			},
 		},
-		rules: {
-			'no-console': ['warn', { allow: ['error'] }],
-			'no-lonely-if': 'error',
-			'jsdoc/no-undefined-types': 'off',
-			'jsdoc/tag-lines': [
-				'error',
-				'any',
-				{
-					startLines: 1,
-				},
-			],
-		},
+		rules: sharedRules,
 	},
 
 	// Ignore patterns.
