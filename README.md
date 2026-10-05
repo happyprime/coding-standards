@@ -10,7 +10,7 @@ Happy Prime projects.
 | `HappyPrime/ruleset.xml` | The `HappyPrime` phpcs standard — WPCS + PHPCompatibilityWP + VariableAnalysis |
 | `phpstan.neon.dist` | PHPStan level 1 with WordPress, WP-CLI, and test stubs pre-scanned |
 | `common-configs/` | Shared editorconfig, prettier, stylelint, postcss, webpack configs |
-| `eslint-config/`, `stylelint-config/`, `postcss-config/` | Published npm packages |
+| `eslint-config/`, `stylelint-config/`, `postcss-config/` | Published npm packages (Node 22+) |
 
 ## Install
 

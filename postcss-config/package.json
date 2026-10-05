@@ -1,26 +1,28 @@
 {
   "name": "@happyprime/postcss-config",
   "version": "0.0.4",
-  "description": "",
+  "description": "Shared PostCSS config for Happy Prime projects.",
   "main": "index.js",
   "exports": {
-	".": "./index.js"
+    ".": "./index.js"
   },
   "keywords": [],
   "author": "happyprime",
   "license": "MIT",
   "engines": {
-    "node": ">=20",
+    "node": ">=22",
     "npm": ">=10"
   },
   "devDependencies": {
-    "postcss-cli": "^11.0.1",
-    "postcss-import": "^16.1.1",
-    "postcss-preset-env": "^10.4.0"
+    "postcss-cli": "^12.0.0",
+    "postcss-import": "^17.0.0",
+    "postcss-preset-env": "^11.5.4",
+    "stylelint": "^17.15.0"
   },
   "peerDependencies": {
-    "postcss-cli": "^11.0.1",
-    "postcss-import": "^16.1.1",
-    "postcss-preset-env": "^10.4.0"
+    "postcss-cli": "^12.0.0",
+    "postcss-import": "^17.0.0",
+    "postcss-preset-env": "^11.5.4",
+    "stylelint": "^17.0.0"
   }
 }
